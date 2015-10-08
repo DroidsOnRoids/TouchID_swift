@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DDD863C01DC9F48C8A6043C9232956208CA56BF4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B2CD61B75993F05077AD889D64476697B7F03448" : 0,
+    "DDD863C01DC9F48C8A6043C9232956208CA56BF4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EEB15852-BA3E-4948-9F12-BDBA1F85C68A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B2CD61B75993F05077AD889D64476697B7F03448" : "..",
+    "DDD863C01DC9F48C8A6043C9232956208CA56BF4" : "TouchID_swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DORTouchID_swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DORTouchID_swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/sknerusios\/sknerus-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2CD61B75993F05077AD889D64476697B7F03448"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DroidsOnRoids\/TouchID_swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DDD863C01DC9F48C8A6043C9232956208CA56BF4"
+    }
+  ]
+}
