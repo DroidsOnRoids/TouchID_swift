@@ -33,33 +33,25 @@ class ViewController: UIViewController {
                 reply: { (success, error) -> Void in
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         if let _ = error {
-                            let alert = UIAlertController(title: "Error", message: "Oops! There was a problem verifying your identity :(", preferredStyle: .Alert)
-                            let action = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
-                            alert.addAction(action)
-                            self.presentViewController(alert, animated: true, completion: nil)
+                            self.showAlert("Error", message: "Oops! There was a problem verifying your identity :(")
                         } else {
                             if success {
-                                let alert = UIAlertController(title: "Success", message: "This is your device!", preferredStyle: .Alert)
-                                let action = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
-                                alert.addAction(action)
-                                self.presentViewController(alert, animated: true, completion: nil)
+                                self.showAlert("Success", message: "This is your device!")
                             } else {
-                                let alert = UIAlertController(title: "Error", message: "You are not the device owner.", preferredStyle: .Alert)
-                                let action = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
-                                alert.addAction(action)
-                                self.presentViewController(alert, animated: true, completion: nil)
+                                self.showAlert("Error", message: "You are not the device owner.")
                             }
                         }
-                        
-                        
                     })
             })
         } else {
-            let testAlert = UIAlertController(title: "Error", message: "Touch ID is not supported on that device", preferredStyle: .Alert)
-            let action = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
-            testAlert.addAction(action)
-            self.presentViewController(testAlert, animated: true, completion: nil)
+            showAlert("Error", message: "Touch ID is not supported on that device")
         }
     }
+    
+    func showAlert(title: String, message: String) {
+        let testAlert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Destructive, handler: nil)
+        testAlert.addAction(action)
+        self.presentViewController(testAlert, animated: true, completion: nil)
+    }
 }
-
