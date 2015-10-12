@@ -1,36 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SUm-GC-Fv1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Mtq-GB-hWS">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DORTouchID_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SUm-GC-Fv1" customClass="ViewController" customModule="DORTouchID_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="7wu-of-wFl"/>
+                        <viewControllerLayoutGuide type="bottom" id="en0-42-d3X"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="com-dE-sPG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXP-nk-Nd7">
-                                <rect key="frame" x="236" y="236" width="128" height="128"/>
-                                <state key="normal" image="touchIDIcon"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-3S-C0v">
+                                <rect key="frame" x="350" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HBv-1t-Xha"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZV6-ft-RSP"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZzI-as-0ub"/>
+                                    <constraint firstAttribute="width" constant="100" id="cA2-az-8Bp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="touchIDIcon"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HBv-1t-Xha"/>
+                                        <exclude reference="ZV6-ft-RSP"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchIDPasscodeButtonTapped:" destination="SUm-GC-Fv1" eventType="touchUpInside" id="udf-CE-eO4"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAv-ji-9Q0">
+                                <rect key="frame" x="150" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8yU-tD-jAL"/>
+                                    <constraint firstAttribute="height" constant="100" id="pCX-OK-67Q"/>
+                                    <constraint firstAttribute="height" constant="100" id="ues-0D-Ryj"/>
+                                    <constraint firstAttribute="width" constant="100" id="wte-ev-cal"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="touchIDIcon"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8yU-tD-jAL"/>
+                                        <exclude reference="ues-0D-Ryj"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchIDButtonTapped:" destination="SUm-GC-Fv1" eventType="touchUpInside" id="jTv-K8-Bbx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WithBiometrics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-W4-eTM">
+                                <rect key="frame" x="125" y="358" width="150" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="rjQ-to-TpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWJ-WM-9la">
+                                <rect key="frame" x="325" y="358" width="150" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fvc-Ap-cfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DORTouchID_swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVs-gf-shn">
+                                <rect key="frame" x="20" y="40" width="560" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="zDa-XW-sDi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AXP-nk-Nd7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G8n-bt-UgP"/>
-                            <constraint firstItem="AXP-nk-Nd7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eOt-Sn-4OY"/>
+                            <constraint firstItem="NWJ-WM-9la" firstAttribute="top" secondItem="AWe-3S-C0v" secondAttribute="bottom" constant="8" id="53m-QD-uW5"/>
+                            <constraint firstItem="NWJ-WM-9la" firstAttribute="centerX" secondItem="AWe-3S-C0v" secondAttribute="centerX" id="71G-Wa-afY"/>
+                            <constraint firstItem="lAv-ji-9Q0" firstAttribute="centerY" secondItem="com-dE-sPG" secondAttribute="centerY" id="CSc-qg-gbH"/>
+                            <constraint firstItem="lAv-ji-9Q0" firstAttribute="centerX" secondItem="com-dE-sPG" secondAttribute="centerX" constant="-100" id="Dvb-E6-MFf"/>
+                            <constraint firstItem="lAv-ji-9Q0" firstAttribute="centerX" secondItem="com-dE-sPG" secondAttribute="centerX" id="EgC-tc-nf7"/>
+                            <constraint firstItem="BbG-W4-eTM" firstAttribute="top" secondItem="lAv-ji-9Q0" secondAttribute="bottom" constant="8" id="Ni6-XU-n4O"/>
+                            <constraint firstItem="oVs-gf-shn" firstAttribute="top" secondItem="7wu-of-wFl" secondAttribute="bottom" constant="20" id="OXq-3H-Eck"/>
+                            <constraint firstItem="AWe-3S-C0v" firstAttribute="centerY" secondItem="com-dE-sPG" secondAttribute="centerY" id="UZD-Z3-c7Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oVs-gf-shn" secondAttribute="trailing" id="aqg-1U-tFS"/>
+                            <constraint firstItem="BbG-W4-eTM" firstAttribute="centerX" secondItem="lAv-ji-9Q0" secondAttribute="centerX" id="cTV-qG-T4b"/>
+                            <constraint firstItem="lAv-ji-9Q0" firstAttribute="centerY" secondItem="com-dE-sPG" secondAttribute="centerY" id="dFL-Fs-JdM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oVs-gf-shn" secondAttribute="leading" id="oa7-p3-chc"/>
+                            <constraint firstItem="AWe-3S-C0v" firstAttribute="centerX" secondItem="com-dE-sPG" secondAttribute="centerX" constant="100" id="rHl-hC-AFu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CSc-qg-gbH"/>
+                                <exclude reference="EgC-tc-nf7"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJ4-3y-W6O" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="250"/>
+            <point key="canvasLocation" x="565" y="550"/>
         </scene>
     </scenes>
     <resources>
